@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All gossips</title>
+</head>
+<body>
+   <p>
+     <h3>Voici la page du potin n°<%= params[:id] %></h3></br>
+      Son auteur : <%= Gossip.find(params[:id].to_i).author %></br>
+      Le contenu du potin : <%= Gossip.find(params[:id].to_i).gossip %>
+   </p>
+   <a href = "/">Lien pour revenir à la page des potins</a>
+</body>
+</html>
